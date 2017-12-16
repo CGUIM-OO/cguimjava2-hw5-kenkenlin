@@ -8,7 +8,7 @@ public abstract class Person {
 	public ArrayList<Card> getOneRoundCard(){
 		return oneRoundCard;
 	}
-	public abstract boolean hit_me(Table table);
+	public abstract boolean hit_me(Table tbl);
 	public int getTotalValue() {
 		int Ace_count = 0;
 		int total_value = 0;
@@ -44,7 +44,7 @@ public abstract class Person {
 	}
 	public void printAllCard(){
 		for(Card c : oneRoundCard){
-			c.printCard();
+			c.printCard(c.getSuit(),c.getRank());
 		}
 	}
 }
