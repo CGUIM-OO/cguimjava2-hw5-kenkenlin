@@ -8,6 +8,6 @@ public class HW5 {
 		tbl.set_player(3, new Player("Palyer 4",300));
 		tbl.set_dealer(new Dealer());
 		
-		tbl.play();
+		tbl.play(tbl);
 	}
 }
